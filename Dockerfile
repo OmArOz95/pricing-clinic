@@ -33,5 +33,5 @@ RUN pip install --no-cache-dir --upgrade pip && \
 
 COPY --chown=user . .
 
-EXPOSE 7860
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "7860"]
+EXPOSE 10000
+CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "10000"]
